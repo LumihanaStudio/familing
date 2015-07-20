@@ -2,95 +2,95 @@
 <items version="2" >
 
     <item
-        jar="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/jars/classes.jar"
+        jar="/home/yoo2001818/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
         jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="288913b440a3c61c30aa171095453a605432277a">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/classes-a9a9f13a8e1b54f15ad6fa57f9c401390efee2be.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-7c8a49c29526c2f2b821ccf13e8c9ef93dca7aee.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/exploded-aar/com.github.rey5137/material/1.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="60dee46bb1ba50fb53b5d064694dc849246596fd">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/classes-fa7120a2a0841c759bd8911abcbca1658497e9da.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/classes-0e4d39189dd30dff4e62ab451dbf9ac86d5c94e4.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/classes-3563d271047cb95d61e2cb1a85667ec526ee6108.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/classes-33a75a4bf9a1bbe40a10e62a97fdb2ade06b51eb.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/gson-2.3.1-4f9254ed8e1e78fb706d066d26fb2bb6b07db468.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/library-2.4.0-56ca5317f3a59934c0cbe4be9d58d1354270f87a.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-40b1da088fb7e163a7d514a92662bc3989721348.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.9.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="d4b681a6084ef53d2825520fc77fcaddde351f64">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/classes-bc4d318fad3b21084d75976654868f0c7d4f8a3c.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/classes-d2a182ad3ecc542d659f973f1379035cc87f9435.jar" />
-    </item>
-    <item
-        jar="/home/kotohana-laptop/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
+        revision="21.1.2"
         sha1="a681c044244d9fc375198588297a39ba78028423">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-510b688766b71fa946e530654d5a595a8e89a654.jar" />
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-a216e92b699af1748c2c8e14ed86713fcd773d64.jar" />
     </item>
     <item
-        jar="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.6.0/jars/classes.jar"
+        jar="/home/yoo2001818/git/familing/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.6.0/jars/classes.jar"
         jumboMode="false"
-        revision="23.0.0 rc2"
+        revision="21.1.2"
         sha1="1c83e45c56a824bc54f276b2fa071f1914cceba7">
-        <dex dex="/home/kotohana-laptop/Android-Source/Sources/Android/familing/app/build/intermediates/pre-dexed/debug/classes-a02cee3999fc8b5c7785be8b1d0ce5c8cf9ae8d3.jar" />
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/classes-34760200ef33ba40ef16e2ee7670ee56b340a136.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/Develop/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-734b9ef7c0c24bf3da50eba9f063d764f7a5db44.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/library-2.4.0-c6fbaadf392bbefe62e5984d526708d2391ad9ce.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/git/familing/app/build/intermediates/exploded-aar/com.github.rey5137/material/1.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="60dee46bb1ba50fb53b5d064694dc849246596fd">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/classes-d44237da903ef9a93e6a07abeb4e35d6d622b39c.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/git/familing/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-e5bc453847f17295c068f70e91bf8b6371a3ea4a.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/git/familing/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.9.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d4b681a6084ef53d2825520fc77fcaddde351f64">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/classes-1a1f8ebe9419b661f6851b3ff8a71f10bcc2a84a.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/git/familing/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/classes-b3e1c7c14dd52b50328dcf784e15c6dd04a60a03.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/git/familing/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/classes-1b943e27ee0abe9592b79ed029ab430fd70c6146.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/git/familing/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/classes-ca6e43fcb4a95f39c647e1567ca2e294ccc5cc2d.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/git/familing/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/classes-2c5719d1279bd5bc1d737633dceaa7cafee11119.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/git/familing/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="288913b440a3c61c30aa171095453a605432277a">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/classes-826b3dba3dd77972b985278073551fbc0093c6bc.jar" />
+    </item>
+    <item
+        jar="/home/yoo2001818/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/home/yoo2001818/git/familing/app/build/intermediates/pre-dexed/debug/gson-2.3.1-8606f2ad460f21f955ef6c821619ee61f78ca5ea.jar" />
     </item>
 
 </items>

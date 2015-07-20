@@ -71,5 +71,6 @@ public interface FamilingService {
                             @Part("description") String description, @Part("tagged") List<Integer> tagged,
                             @Part("voteEntries") List<String> voteEntries, @Part("canAdd") boolean a, @Part("photo") TypedFile photo,  Callback<Group> callback);
 
-
+    @GET("/api/article/listByUsers")
+    public void groupListByUsers(Callback<List<BaseUser>> callback);
 }
