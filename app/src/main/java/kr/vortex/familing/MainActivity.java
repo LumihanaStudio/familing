@@ -83,8 +83,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     public void setDrawerListview() {
         drawerListData = new ArrayList<>();
-        drawerListData.add(new DrawerListData(getApplicationContext(), R.drawable.abc_btn_check_to_on_mtrl_000, "마이페이지"));
-        drawerListData.add(new DrawerListData(getApplicationContext(), R.drawable.abc_btn_check_to_on_mtrl_000, "마이페이지"));
+        drawerListData.add(new DrawerListData(getApplicationContext(), R.drawable.abc_btn_check_to_on_mtrl_000, "가족"));
         drawerListData.add(new DrawerListData(getApplicationContext(), R.drawable.abc_btn_check_to_on_mtrl_000, "마이페이지"));
         drawerListData.add(new DrawerListData(getApplicationContext(), R.drawable.abc_btn_check_to_on_mtrl_000, "환경설정"));
         DrawerAdapter drawerAdapter = new DrawerAdapter(getApplicationContext(), drawerListData);
@@ -93,7 +92,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
-                    case 3:
+                    case 1:
+                        startActivity(new Intent(getApplicationContext(), MyPageActivity.class));
+                        break;
+                    case 2:
                         startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
                 }
             }

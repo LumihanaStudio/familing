@@ -1,38 +1,34 @@
 package kr.vortex.familing;
 
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class MyPageActivity extends ActionBarActivity {
 
+    TextView id, group, name, work;
+
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_page);
+        setDefault();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_my_page, menu);
-        return true;
-    }
+    public void setDefault() {
+        sharedPreferences = getSharedPreferences("familing", 0);
+        id = (TextView) findViewById(R.id.mypage_id);
+        group = (TextView) findViewById(R.id.mypage_group);
+        name  = (TextView)findViewById(R.id.mypage_name);
+        id.setText("ID : "+sharedPreferences.getString("id", ""));
+        group.setText("Group :"+sharedPreferences.getString("groupname", ""));
+        name.setText("Name : "+sharedPreferences.getString("username", ""));
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

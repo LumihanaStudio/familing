@@ -6,8 +6,8 @@ import java.util.List;
  * Created by kotohana-laptop on 15. 7. 20.
  */
 public class Group {
-    int id;
-    String name;
-    String inviteCode;
-    List<User> users;
+    public int id;
+    public String name;
+    public String inviteCode;
+    public List<User> users;
 }

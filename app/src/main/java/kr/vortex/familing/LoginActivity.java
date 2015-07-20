@@ -89,6 +89,8 @@ public class LoginActivity extends ActionBarActivity implements View.OnClickList
                         FamilingConnector.saveApiKey(getApplicationContext(), user.token);
                         editor.putString("username", user.name);
                         editor.putString("photo", user.photo);
+                        editor.putString("groupname", user.group.name);
+                        editor.putString("id", id.getText().toString());
                         editor.commit();
                         Toast.makeText(getApplicationContext(), "정상적으로 로그인되었습니다", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
