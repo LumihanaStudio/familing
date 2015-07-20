@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -25,10 +26,21 @@ import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 import org.w3c.dom.Text;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
+import kr.vortex.familing.utils.Article;
+import kr.vortex.familing.utils.BaseUser;
 import kr.vortex.familing.utils.DrawerAdapter;
 import kr.vortex.familing.utils.DrawerListData;
+import kr.vortex.familing.utils.FamilingConnector;
+import kr.vortex.familing.utils.FamilingService;
+import kr.vortex.familing.utils.User;
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
 import retrofit.http.POST;
 
 
@@ -37,11 +49,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     ArrayList<DrawerListData> drawerListData;
     ViewPager mPager;
     ListView drawerListview;
-    LinearLayout linearLayout;
-    int group_member;
-    String name[], description[];
     FloatingActionButton post1, post2, post3, post4;
     FloatingActionsMenu floatingActionsMenu;
+    FamilingService service;
+    List<User> userList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +64,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
     public void setDefault() {
+        service = FamilingConnector.getInstance();
         floatingActionsMenu = (FloatingActionsMenu)findViewById(R.id.float_menu);
         post1 = (FloatingActionButton) findViewById(R.id.post1);
         post2 = (FloatingActionButton) findViewById(R.id.post2);
@@ -60,9 +72,18 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         post4 = (FloatingActionButton) findViewById(R.id.post4);
         drawerListview = (ListView) findViewById(R.id.drawer_listview);
         mPager = (ViewPager) findViewById(R.id.ViewPager);
-        name = new String[]{"아버지", "어머니", "동생", "나"};
-        group_member = 4;
-        mPager.setAdapter(new PagerAdapterClass(this));
+        service.groupListByUsers(new Callback<List<BaseUser>>() {
+            @Override
+            public void success(List<BaseUser> users, Response response) {
+                mPager.setAdapter(new PagerAdapterClass(MainActivity.this, users));
+            }
+
+            @Override
+            public void failure(RetrofitError error) {
+                // Crash
+                Log.e("Network", error.getMessage());
+            }
+        });
         mPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -101,12 +122,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
     public void setPage(View view, int position) {
-        TextView nameText = (TextView) view.findViewById(R.id.name);
-        TextView descriptionText = (TextView) view.findViewById(R.id.description);
-        linearLayout = (LinearLayout) view.findViewById(R.id.linearlayout);
-        nameText.setText(name[position]);
-        descriptionText.setText(position + " 번째 페이지입니다");
-        addView();
     }
 
     public void setFloating() {
@@ -135,13 +150,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     }
 
-    public void addView() {
-        for (int i = 0; i < 10; i++) {
-            View result = getLayoutInflater().inflate(R.layout.cardview_main, null, false);
-            linearLayout.addView(result);
-        }
-    }
-
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -158,15 +166,17 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     public class PagerAdapterClass extends PagerAdapter {
         private LayoutInflater mInflater;
+        private List<BaseUser> userList;
 
-        public PagerAdapterClass(Context c) {
+        public PagerAdapterClass(Context c, List<BaseUser> userList) {
             super();
             mInflater = LayoutInflater.from(c);
+            this.userList = userList;
         }
 
         @Override
         public int getCount() {
-            return group_member;
+            return userList.size();
         }
 
         @Override
@@ -174,7 +184,32 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             View v = null;
             // TODO: Set each page's view
             v = mInflater.inflate(R.layout.view_layout, null);
-            setPage(v, position);
+
+            BaseUser user = userList.get(position);
+            TextView nameText = (TextView) v.findViewById(R.id.name);
+            TextView descriptionText = (TextView) v.findViewById(R.id.description);
+            LinearLayout linearLayout = (LinearLayout) v.findViewById(R.id.linearlayout);
+            nameText.setText(user.name);
+            descriptionText.setText(position + " 번째 페이지입니다");
+            for(Article article : user.articles) {
+                View result = getLayoutInflater().inflate(R.layout.cardview_main, null, false);
+                TextView articleNameText = (TextView) result.findViewById(R.id.entry_name);
+                TextView articleDateText = (TextView) result.findViewById(R.id.entry_date);
+                ImageView articleIcon = (ImageView) result.findViewById(R.id.icon);
+                articleNameText.setText(article.name);
+                // date
+                Date createDate = article.getCreatedAt();
+                SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+                if(createDate != null) {
+                    articleDateText.setText(dt1.format(createDate));
+                } else {
+                    articleDateText.setText("");
+                }
+                // icon
+                int[] types = new int[] {R.drawable.ic_howto, R.drawable.ic_normal, R.drawable.ic_please, R.drawable.ic_target};
+                articleIcon.setImageDrawable(getDrawable(types[article.type]));
+                linearLayout.addView(result);
+            }
 
             ((ViewPager) pager).addView(v, 0);
             return v;
