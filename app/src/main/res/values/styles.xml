@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="AppThemeWithActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/actionBarStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="actionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:colorBackground">#ffda6c</item>
+    </style>
+</resources>
